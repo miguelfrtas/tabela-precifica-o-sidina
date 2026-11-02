@@ -11,7 +11,7 @@
   .actions{display:none!important}
 
   /* Cada pacote permanece inteiro e não é fragmentado entre páginas. */
-  .cards{display:block}
+  .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;break-inside:avoid;page-break-inside:avoid}
   .card{
     width:100%;
     min-height:0;
